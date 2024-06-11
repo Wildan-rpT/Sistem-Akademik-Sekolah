@@ -7,7 +7,7 @@
         <ul class="navbar-nav bg-gradient-primary sidebar sidebar-dark accordion" id="accordionSidebar">
 
             <!-- Sidebar - Brand -->
-            <a class="sidebar-brand d-flex align-items-center justify-content-center" href="Controller_home">
+            <a class="sidebar-brand d-flex align-items-center justify-content-center" href="home">
                 <div class="sidebar-brand-icon">
                     <i class="fas fa-university"></i>
                 </div>
@@ -19,7 +19,7 @@
 
             <!-- Nav Item - Dashboard -->
             <li class="nav-item active">
-                <a class="nav-link" href="Controller_home">
+                <a class="nav-link" href="home">
                     <span>Dashboard</span></a>
             </li>
 
@@ -33,25 +33,25 @@
 
             <!-- Nav Item - Guru -->
             <li class="nav-item">
-                <a class="nav-link" href="Controller_guru">
+                <a class="nav-link" href="guru">
                     <span>Guru</span></a>
             </li>
 
             <!-- Nav Item - Siswa -->
             <li class="nav-item">
-                <a class="nav-link" href="Controller_siswa">
+                <a class="nav-link" href="siswa">
                     <span>Siswa</span></a>
             </li>
 
             <!-- Nav Item - Berita -->
             <li class="nav-item">
-                <a class="nav-link" href="Controller_kelas">
+                <a class="nav-link" href="kelas">
                     <span>Kelas</span></a>
             </li>
 
             <!-- Nav Item - Sekolah -->
             <li class="nav-item">
-                <a class="nav-link" href="Controller_mapel">
+                <a class="nav-link" href="mapel">
                     <span>Mata Pelajaran</span></a>
             </li>
 
