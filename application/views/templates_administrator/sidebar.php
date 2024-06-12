@@ -33,26 +33,44 @@
 
             <!-- Nav Item - Guru -->
             <li class="nav-item">
+<<<<<<< Updated upstream:application/views/templates_administrator/sidebar.php
                 <a class="nav-link" href="charts.html">
+=======
+                <a class="nav-link" href="teacher">
+>>>>>>> Stashed changes:application/views/templates_menu/sidebar.php
                     <span>Guru</span></a>
             </li>
 
             <!-- Nav Item - Siswa -->
             <li class="nav-item">
+<<<<<<< Updated upstream:application/views/templates_administrator/sidebar.php
                 <a class="nav-link" href="charts.html">
+=======
+                <a class="nav-link" href="student">
+>>>>>>> Stashed changes:application/views/templates_menu/sidebar.php
                     <span>Siswa</span></a>
             </li>
 
             <!-- Nav Item - Berita -->
             <li class="nav-item">
+<<<<<<< Updated upstream:application/views/templates_administrator/sidebar.php
                 <a class="nav-link" href="charts.html">
                     <span>Berita</span></a>
+=======
+                <a class="nav-link" href="classroom">
+                    <span>Kelas</span></a>
+>>>>>>> Stashed changes:application/views/templates_menu/sidebar.php
             </li>
 
             <!-- Nav Item - Sekolah -->
             <li class="nav-item">
+<<<<<<< Updated upstream:application/views/templates_administrator/sidebar.php
                 <a class="nav-link" href="tables.html">
                     <span>Tentang kami</span></a>
+=======
+                <a class="nav-link" href="course">
+                    <span>Mata Pelajaran</span></a>
+>>>>>>> Stashed changes:application/views/templates_menu/sidebar.php
             </li>
 
             <!-- Divider -->
