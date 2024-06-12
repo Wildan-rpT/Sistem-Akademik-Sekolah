@@ -58,7 +58,7 @@ $autoload['packages'] = array();
 |
 |	$autoload['libraries'] = array('user_agent' => 'ua');
 */
-$autoload['libraries'] = array('session','form_validation');
+$autoload['libraries'] = array('database','session','form_validation');
 
 /*
 | -------------------------------------------------------------------
@@ -132,4 +132,8 @@ $autoload['language'] = array();
 |
 |	$autoload['model'] = array('first_model' => 'first');
 */
+<<<<<<< Updated upstream
 $autoload['model'] = array();
+=======
+$autoload['model'] = array('Model_teacher','Model_student','Model_classroom','Model_course');
+>>>>>>> Stashed changes
