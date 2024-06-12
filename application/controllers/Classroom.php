@@ -5,8 +5,8 @@ class Classroom extends CI_Controller
 {
 	public function index()
 	{
-		$this->load->model('Data_model');
-		$data['tb_classroomm'] = $this->Data_model->get_classroom();
+		$this->load->model('Model_classroom');
+		$data['tb_classroom'] = $this->Model_classroom->get_classroom();
 		$this->load->view('templates_menu/header');
 		$this->load->view('templates_menu/sidebar');
 		$this->load->view('menu/classroom', $data);

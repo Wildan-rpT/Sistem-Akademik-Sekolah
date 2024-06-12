@@ -6,29 +6,22 @@
     <thead>
       <tr>
         <th scope="col">id</th>
-        <th scope="col">Nip</th>
-        <th scope="col">foto</th>
-        <th scope="col">Nama</th>
-        <th scope="col">Jenis_kelamin</th>
-        <th scope="col">Alamat</th>
-        <th scope="col">no_hp</th>
-        <th scope="col">Aksi</th>
+        <th scope="col">Mata Pelajaran</th>
+        <th scope="col">Guru</th>
       </tr>
     </thead>
     <tbody>
-      <tr>
-        <th scope="row">1</th>
-        <td>123456789102314567</td>
-        <td>JPEG</td>
-        <td>Marisa fadilah</td>
-        <td>Perempuan</td>
-        <td>Jl. Rajabasa No. 14 Rt. 02 Rw. 09 Kec. Sukun Malang</td>
-        <td>082330459681</td>
-        <td>
-          <a href="" class="btn btn-primary">Edit</a>
-          <a href="" class="btn btn-danger">Hapus</a>
-        </td>
-      </tr>
+      <?php foreach ($tb_course as $tse) : ?>
+        <tr>
+          <td><?= $tse['id_mapel']; ?></td>
+          <td><?= $tse['nama_pelajaran']; ?></td>
+          <td><?= $tse['id_guru']; ?></td>
+          <td>
+            <a href="" class="btn btn-primary">Edit</a>
+            <a href="" class="btn btn-danger">Hapus</a>
+          </td>
+        </tr>
+      <?php endforeach ?>
     </tbody>
   </table>
 </div>

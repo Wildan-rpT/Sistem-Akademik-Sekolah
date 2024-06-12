@@ -6,29 +6,22 @@
     <thead>
       <tr>
         <th scope="col">id</th>
-        <th scope="col">Nip</th>
-        <th scope="col">foto</th>
-        <th scope="col">Nama</th>
-        <th scope="col">Jenis_kelamin</th>
-        <th scope="col">Alamat</th>
-        <th scope="col">no_hp</th>
-        <th scope="col">Aksi</th>
+        <th scope="col">Kelas</th>
+        <th scope="col">Kode Kelas</th>
       </tr>
     </thead>
     <tbody>
-      <tr>
-        <th scope="row">1</th>
-        <td>123456789102314567</td>
-        <td>JPEG</td>
-        <td>Marisa fadilah</td>
-        <td>Perempuan</td>
-        <td>Jl. Rajabasa No. 14 Rt. 02 Rw. 09 Kec. Sukun Malang</td>
-        <td>082330459681</td>
-        <td>
-          <a href="" class="btn btn-primary">Edit</a>
-          <a href="" class="btn btn-danger">Hapus</a>
-        </td>
-      </tr>
+      <?php foreach ($tb_classroom as $tcs) : ?>
+        <tr>
+          <td><?= $tcs['id_kelas']; ?></td>
+          <td><?= $tcs['kelas']; ?></td>
+          <td><?= $tcs['kode_kelas']; ?></td>
+          <td>
+            <a href="" class="btn btn-primary">Edit</a>
+            <a href="" class="btn btn-danger">Hapus</a>
+          </td>
+        </tr>
+      <?php endforeach ?>
     </tbody>
   </table>
 </div>

@@ -2,7 +2,7 @@
   <h3><i class="fas fa-people-carry"></i> SISWA </h3>
   <hr class="bg-secondary">
   <table class="table table-striped">
-    <a href="" class="btn btn-primary">Tambahkan</a>
+    <a href="<?php echo base_url('student/add') ?>" class="btn btn-primary">Tambahkan</a>
     <thead>
       <tr>
         <th scope="col">id</th>

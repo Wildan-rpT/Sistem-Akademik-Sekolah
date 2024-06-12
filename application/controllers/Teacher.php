@@ -5,8 +5,8 @@ class Teacher extends CI_Controller
 {
 	public function index()
 	{
-		$this->load->model('Data_model');
-		$data['tb_teacher'] = $this->Data_model->get_teacher();
+		$this->load->model('Model_teacher');
+		$data['tb_teacher'] = $this->Model_teacher->get_teacher();
 		$this->load->view('templates_menu/header');
 		$this->load->view('templates_menu/sidebar');
 		$this->load->view('menu/teacher', $data);
