@@ -1,62 +1,55 @@
-<?php
-if( isset($_POST["submit"]) ) {
-    //mengambil data dari setiap elemen
-    $nisn = htmlspecialchars ($_POST["nisn"]);
-    $foto = htmlspecialchars ($_POST["foto"]);
-    $nama = htmlspecialchars ($_POST["nama"]);
-    $jenis_kelamin = htmlspecialchars ($_POST["jenis_kelamin"]);
-    $alamat = htmlspecialchars ($_POST["alamat"]);
-    $no_hp = htmlspecialchars ($_POST["no_hp"]);
-    
-    //query
-    $data = "INSERT INTO tb_siswa VALUES ('','$nisn','$foto','$nama','$jenis_kelamin','$alamat','$no_hp')";
-    mysqli_query($data);
+<!-- PAGE CONTENT -->
+<div class="container-fluid">
 
-    echo"
-    <script>
-        alert('DATA BERHASIL DI TAMBAHKAN ');
-        document.location.href='admin.php';
-    </script>
-    "; 
-}
+    <!-- Page heading-->
+    <br>
+    <h1 class="h3 mb-4 text-gray-800">Tambah data siswa</h1>
 
+    <div class="row">
+        <div class="col-lg-8">
 
-?>
-<form action="" method="post">
-    <ul>
-        <li>
-            <label for="nisn">Nisn &nbsp; : &nbsp;</label>
-            <input type="text" name="nisn" id="nisn" required>
-        </li>
-        <br>
-        <li>
-            <label for="foto">Foto &nbsp; &nbsp; :  &nbsp;</label>
-            <input type="text" name="foto" id="foto"required>
-        </li>
-        <br>
-        <li>
-            <label for="nama">nama : &nbsp;</label>
-            <input type="text" name="nama" id="nama"required>
-        </li>
-        <br>
-        <li>
-            <label for="jenis_kelamin">jenis_kelamin &nbsp; : &nbsp;</label>
-            <input type="text" name="jenis_kelamin" id="jenis_kelamin" required>
-        </li>
-        <br>
-        <li>
-            <label for="alamat">alamat &nbsp; : &nbsp;</label>
-            <input type="text" name="alamat" id="alamat" required>
-        </li>
-        <br>
-        <li>
-            <label for="no_hp">No_hp &nbsp; : &nbsp;</label>
-            <input type="text" name="no_hp" id="no_hp" required>
-        </li>
-        <br>
-        <li>
-        <button type="submit" name="submit">Tambah</button>
-        </li>
-    </ul>
+            <?= form_open_multipart('student/add'); ?>
+            <div class="row mb-3">
+                <label for="nisn" class="col-sm-2 col-form-label">NISN</label>
+                <div class="col-sm-10">
+                    <input type="text" class="form-control" id="nisn" name="nisn">
+                </div>
+            </div>
 
-</form>
+            <div class="row mb-3">
+                <label for="nama" class="col-sm-2 col-form-label">Nama</label>
+                <div class="col-sm-10">
+                    <input type="text" class="form-control" id="nama" name="nama">
+                </div>
+            </div>
+
+            <div class="row mb-3">
+                <label for="jenis_kelamin" class="col-sm-2 col-form-label">Jenis Kelamin</label>
+                <div class="col-sm-10">
+                    <input type="text" class="form-control" id="jenis_kelamin" name="jenis_kelamin">
+                </div>
+            </div>
+
+            <div class="row mb-3">
+                <label for="alamat" class="col-sm-2 col-form-label">Alamat</label>
+                <div class="col-sm-10">
+                    <input type="text" class="form-control" id="alamat" name="alamat">
+                </div>
+            </div>
+
+            <div class="row mb-3">
+                <label for="no_hp" class="col-sm-2 col-form-label">Nomor Telepon</label>
+                <div class="col-sm-10">
+                    <input type="text" class="form-control" id="no_hp" name="no_hp">
+                </div>
+            </div>
+
+            <div class="row mb-3">
+                <label for="foto" class="col-sm-2 col-form-label">Foto</label>
+                <div class="col-sm-10">
+                    <input class="form-control" type="file" id="foto" name="foto">
+                </div>
+            </div>
+        </div>
+    </div>
+</div>

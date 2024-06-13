@@ -1,5 +1,5 @@
 <div class="col-sm-10 col-md-10 col-lg-10 p-5 pt-2">
-  <h3><i class="fas fa-people-carry"></i> GURU </h3>
+  <h3><i class="fas fa-chalkboard-teacher"></i> GURU </h3>
   <hr class="bg-secondary">
   <table class="table table-striped">
     <a href="" class="btn btn-primary">Tambahkan</a>
