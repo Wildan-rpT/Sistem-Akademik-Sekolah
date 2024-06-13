@@ -11,7 +11,6 @@ class Student extends CI_Controller
 
 	public function index()
 	{
-		$this->load->model('Model_student');
 		$data['tb_student'] = $this->Model_student->get_student();
 		$this->load->view('templates_menu/header');
 		$this->load->view('templates_menu/sidebar');
@@ -21,9 +20,10 @@ class Student extends CI_Controller
 
 	public function add()
 	{
+		$data['tb_student'] = $this->Model_student->get_student();
 		$this->load->view('templates_menu/header');
 		$this->load->view('templates_menu/sidebar');
-		$this->load->view('form/addstudent');
+		$this->load->view('form/addstudent', $data);
 		$this->load->view('templates_menu/footer');
 	}
 }
