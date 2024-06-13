@@ -7,7 +7,7 @@
         <ul class="navbar-nav bg-gradient-primary sidebar sidebar-dark accordion" id="accordionSidebar">
 
             <!-- Sidebar - Brand -->
-            <a class="sidebar-brand d-flex align-items-center justify-content-center" href="<?php echo base_url() ?>index.html">
+            <a class="sidebar-brand d-flex align-items-center justify-content-center" href="<?php echo base_url() ?>home">
                 <div class="sidebar-brand-icon">
                     <i class="fas fa-university"></i>
                 </div>
@@ -19,7 +19,7 @@
 
             <!-- Nav Item - Dashboard -->
             <li class="nav-item active">
-                <a class="nav-link" href="<?php echo base_url() ?>index.html">
+                <a class="nav-link" href="<?php echo base_url() ?>home">
                     <span>Dashboard</span></a>
             </li>
 
