@@ -25,7 +25,11 @@
             <div class="row mb-3">
                 <label for="jenis_kelamin" class="col-sm-2 col-form-label">Jenis Kelamin</label>
                 <div class="col-sm-10">
-                    <input type="text" class="form-control" id="jenis_kelamin" name="jenis_kelamin" required>
+                    <select class="form-select" aria-label="Default select example" id="jenis_kelamin" name="jenis_kelamin" required>
+                        <option selected>-</option>
+                        <option value="Laki">Laki-Laki</option>
+                        <option value="Perempuan">Perempuan</option>
+                    </select>
                 </div>
             </div>
 
@@ -51,9 +55,15 @@
             </div>
 
             <div class="row mb-3">
-                <label for="id_kelas" class="col-sm-2 col-form-label">id_kelas</label>
+                <label for="id_kelas" class="col-sm-2 col-form-label">Id Kelas</label>
                 <div class="col-sm-10">
-                    <input class="form-control" type="text" id="id_kelas" name="id_kelas" required>
+                    <select class="form-select" aria-label="Default select example" id="id_kelas" name="id_kelas" required>
+                        <option selected>-</option>
+                        <option value="1">1</option>
+                        <option value="2">2</option>
+                        <option value="3">3</option>
+                        <option value="4">4</option>
+                    </select>
                 </div>
             </div>
 

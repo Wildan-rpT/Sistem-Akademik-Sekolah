@@ -9,29 +9,31 @@
         <th scope="col">NISN</th>
         <th scope="col">foto</th>
         <th scope="col">Nama</th>
-        <th scope="col">Jenis_kelamin</th>
+        <th scope="col">Jenis kelamin</th>
         <th scope="col">Alamat</th>
         <th scope="col">no_hp</th>
+        <th scope="col">Id kelas</th>
         <th scope="col">Aksi</th>
       </tr>
     </thead>
     <tbody>
-      <?php $no = 1; 
+      <?php $no = 1;
       foreach ($tb_student as $tst) : ?>
         <tr>
-          <td><?= $no++ ; ?></td>
+          <td><?= $no++; ?></td>
           <td><?= $tst['nisn']; ?></td>
           <td>
-            <img src="<?php echo base_url() . '/foto/' . $tst ['foto']; ?>" width="100">
+            <img src="<?php echo base_url() . '/foto/' . $tst['foto']; ?>" width="100" height="100">
           </td>
           <td><?= $tst['nama']; ?></td>
           <td><?= $tst['jenis_kelamin']; ?></td>
           <td><?= $tst['alamat']; ?></td>
           <td><?= $tst['no_hp']; ?></td>
           <td><?= $tst['id_kelas']; ?></td>
+          <td></td>
           <td>
-            <a href="<?php echo base_url('student/edit') ?>" class="badge badge-primary">Edit</a>
-            <a href="<?= base_url() ?>student/hapus_student/<?= $tst['id_siswa'];?>" class="badge badge-danger">Hapus</a>
+            <a href="<?php echo base_url('student/edit/') ?><?= $tst['id_siswa']; ?>" class="badge badge-primary">Edit</a>
+            <a href="<?= base_url('student/delete_student/') ?><?= $tst['id_siswa']; ?>" class="badge badge-danger">Hapus</a>
           </td>
         </tr>
       <?php endforeach ?>
