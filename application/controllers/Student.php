@@ -48,7 +48,6 @@ class Student extends CI_Controller
 				$foto = $this->upload->data('file_name');
 			}
 		}
-		$id_kelas      = $this->input->post('id_kelas');
 		$data = array(
 			'nisn'          => $nisn,
 			'nama'          => $nama,
@@ -56,9 +55,9 @@ class Student extends CI_Controller
 			'alamat'        => $alamat,
 			'no_hp'         => $no_hp,
 			'foto'          => $foto,
-			'id_kelas' 		=> $id_kelas,
 		);
 
+		$this->session->set_flashdata('pesan', '<div class="alert alert-success" role="alert">Data berhasil ditambahkan!</div>');
 		$this->Model_student->input_data($data, 'tb_siswa');
 		redirect('student/index');
 	}
@@ -66,6 +65,7 @@ class Student extends CI_Controller
 	public function delete_student($id_siswa)
 	{
 		$this->Model_student->delete_student($id_siswa);
+		$this->session->set_flashdata('pesan', '<div class="alert alert-success" role="alert">Data berhasil dihapus!</div>');
 		redirect('student/index');
 	}
 
@@ -95,7 +95,6 @@ class Student extends CI_Controller
 			$jenis_kelamin = $this->input->post('jenis_kelamin');
 			$alamat = $this->input->post('alamat');
 			$no_hp = $this->input->post('no_hp');
-			$id_kelas = $this->input->post('id_kelas');
 
 			//cek jika ubah gambar
 			$foto = $_FILES['foto']['name'];
@@ -119,10 +118,10 @@ class Student extends CI_Controller
 			$this->db->set('jenis_kelamin', $jenis_kelamin);
 			$this->db->set('alamat', $alamat);
 			$this->db->set('no_hp', $no_hp);
-			$this->db->set('id_kelas', $id_kelas);
 			$this->db->where('id_siswa', $id_siswa);
 			$this->db->update('tb_siswa');
 		}
+		$this->session->set_flashdata('pesan', '<div class="alert alert-success" role="alert">Data berhasil diubah!</div>');
 		redirect('student/index');
 	}
 }

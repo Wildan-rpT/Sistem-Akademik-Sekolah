@@ -30,9 +30,4 @@ class Model_student extends CI_Model
         $this->db->where('id_siswa', $id_siswa);
         return $this->db->get()->row_array();
     }
-
-    public function edit_student($data)
-    {
-        $this->db->update('tb_siswa', $data);
-    }
 }
