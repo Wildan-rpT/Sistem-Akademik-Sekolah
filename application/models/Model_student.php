@@ -10,4 +10,24 @@ class Model_student extends CI_Model
         $query = $this->db->get();
         return $query->result_array();
     }
+
+    public function input_data($data)
+    {
+        $this->db->insert('tb_siswa', $data);
+    }
+
+    public function delete_student($id_siswa)
+    {
+        $this->db->where('id_siswa', $id_siswa);
+        $this->db->delete('tb_siswa');
+    }
+
+    //mengambil data dari database untuk ditampilkan di form edit
+    public function detail_student($id_siswa)
+    {
+        $this->db->select('*');
+        $this->db->from('tb_siswa');
+        $this->db->where('id_siswa', $id_siswa);
+        return $this->db->get()->row_array();
+    }
 }

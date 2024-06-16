@@ -36,7 +36,7 @@
 
                     <!-- Menu SISWA -->
                     <div class="col-xl-3 col-md-6 mb-4">
-                        <a class="" href="<?php echo base_url('teacher') ?>">
+                        <a class="" href="<?php echo base_url('student') ?>">
                             <div class="card border-left-success shadow h-100 py-2">
                                 <div class="card-body">
                                     <div class="row no-gutters align-items-center">
@@ -55,7 +55,7 @@
 
                     <!-- Menu Kelas -->
                     <div class="col-xl-3 col-md-6 mb-4">
-                        <a class="" href="<?php echo base_url('teacher') ?>">
+                        <a class="" href="<?php echo base_url('classroom') ?>">
                             <div class="card border-left-info shadow h-100 py-2">
                                 <div class="card-body">
                                     <div class="row no-gutters align-items-center">
@@ -78,7 +78,7 @@
 
                     <!-- Menu MAPEL -->
                     <div class="col-xl-3 col-md-6 mb-4">
-                        <a class="" href="<?php echo base_url('teacher') ?>">
+                        <a class="" href="<?php echo base_url('course') ?>">
                             <div class="card border-left-warning shadow h-100 py-2">
                                 <div class="card-body">
                                     <div class="row no-gutters align-items-center">

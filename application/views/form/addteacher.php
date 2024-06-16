@@ -3,15 +3,15 @@
 
     <!-- Page heading-->
     <br>
-    <h1 class="h3 mb-4 text-gray-800">Tambah Data Siswa</h1>
+    <h1 class="h3 mb-4 text-gray-800">Tambah Data Guru</h1>
 
     <div class="row">
         <div class="col-lg-8">
-            <?= form_open_multipart('student/add_student'); ?>
+            <?= form_open_multipart('teacher/add_teacher'); ?>
             <div class="row mb-3">
-                <label for="nisn" class="col-sm-2 col-form-label">NISN</label>
+                <label for="nip" class="col-sm-2 col-form-label">NIP</label>
                 <div class="col-sm-10">
-                    <input type="text" class="form-control" id="nisn" name="nisn" required>
+                    <input type="text" class="form-control" id="nip" name="nip" required>
                 </div>
             </div>
 
@@ -57,7 +57,7 @@
             <div class="form-group row justify-content-end">
                 <div class="col-sm-10">
                     <button type="submit" class="btn btn-primary">Tambahkan</button>
-                    <a href="<?php echo base_url('student') ?>" class="btn btn-primary">Batal</a>
+                    <a href="<?php echo base_url('teacher') ?>" class="btn btn-primary">Batal</a>
                 </div>
             </div>
         </div>

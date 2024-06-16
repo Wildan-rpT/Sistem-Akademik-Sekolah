@@ -2,7 +2,7 @@
   <h3><i class="fas fa-pen"></i> MATA PELAJARAN </h3>
   <hr class="bg-secondary">
   <table class="table table-striped">
-    <a href="" class="btn btn-primary">Tambahkan</a>
+    <a href="<?php echo base_url('course/add') ?>" class="btn btn-primary">Tambahkan</a>
     <thead>
       <tr>
         <th scope="col">id</th>
@@ -15,10 +15,10 @@
         <tr>
           <td><?= $tse['id_mapel']; ?></td>
           <td><?= $tse['nama_pelajaran']; ?></td>
-          <td><?= $tse['id_guru']; ?></td>
+          <td><?= $tse['nama']; ?></td>
           <td>
-            <a href="" class="btn btn-primary">Edit</a>
-            <a href="" class="btn btn-danger">Hapus</a>
+            <a href="<?php echo base_url('course/edit/') ?><?= $tse['id_mapel']; ?>" class="btn btn-primary">Edit</a>
+            <a href="<?= base_url('course/delete_course/') ?><?= $tse['id_mapel']; ?>" class="btn btn-danger">Hapus</a>
           </td>
         </tr>
       <?php endforeach ?>
